@@ -42,6 +42,9 @@ def check(categorya, q):
                     c += 1
     print("\nThere are {0} out of {1} items in my list that has this letter".
           format(c, len(picked)))
+    if c == 0:
+        print ("\nTry again, later! Bye..")
+        sys.exit()
     count = 0
     while True:
         answer = input("\nGueseds the item? What do you think it is? ")
